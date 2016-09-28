@@ -43,11 +43,14 @@ pause
 goto menu
 
 :install
+goto python
 
 :python
+goto set
 
 
 paths:
+
 
 
 :set
@@ -57,15 +60,10 @@ curl https://raw.githubusercontent.com/esrlabs/git-repo/stable/repo.cmd >%USERPR
 mkdir ~/bin
 curl https://raw.githubusercontent.com/esrlabs/git-repo/stable/repo > ~/bin/repo
 curl https://raw.githubusercontent.com/esrlabs/git-repo/stable/repo.cmd > ~/bin/repo.cmd
-
-
+goto paths
 
 
 :sync
-echo Hey Sparky you need to checkout 1st then you can update
-pause
-goto checkout
-) 
 set menu_choice=""
 echo ------------------------------------------------------------------------------
 echo EmreAkz building tool
