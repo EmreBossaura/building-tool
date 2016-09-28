@@ -2,7 +2,6 @@
 color 8F
 set current=%cd%
 set bliss_path=%cd%\bliss
-if not exist bliss mkdir bliss
 pushd ..
 set parent=%cd%
 popd
@@ -44,6 +43,11 @@ pause
 goto menu
 
 :install
+
+:python
+
+
+paths:
 
 
 :set
